@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
-#include"packet.h"
+
 using namespace std;
 using namespace sf;
 
@@ -72,15 +72,9 @@ private:
 public:
     Mandelbrot(double,double,int);
     void draw();
-    void make_heap();
-    double Entropy();
-    void automate();
-    void display_static();
     void Start();
     int colour(double,double);
     void zoom();
-
-
 };
 
 Mandelbrot::Mandelbrot(double w,double h,int scheme){
@@ -158,51 +152,7 @@ void Mandelbrot::draw(){
         window.draw(sprite);
         window.display();
     }
-    // image.saveToFile("test.png");
 }
-
-double Mandelbrot::Entropy(){
-        
-
-
-}
-
-void Mandelbrot::make_heap(){
-    int n = w*1.0/pixel_size,m = h*1.0/pixel_size;
-    int d_x = w/5,d_y = h/5; 
-    for (int i = -n/2; i + d_x < n/2 ; i++)
-    {
-        for (int j = -m/2; j + d_y < m/2; j++)
-        {
-        double pos_x_l = 0.5*(show_xr+show_xl) + i*1.0/n * (show_xr-show_xl),pos_y_l = 0.5*(show_yr+show_yl) + j*1.0/m * (show_yr-show_yl);   
-        double pos_x_r = 0.5*(show_xr+show_xl) + (i+d_x)*1.0/n * (show_xr-show_xl),pos_y_r = 0.5*(show_yr+show_yl) + (j+d_y)*1.0/m * (show_yr-show_yl);   
-        double entropy = Entropy();
-        Packet* P =  new Packet(pos_x_l,pos_y_l,pos_x_r,pos_y_r,entropy);
-        }
-    }
-
-
-}
-
-
-void Mandelbrot::display_static(){
-    
-
-
-}
-
-
-void Mandelbrot::automate(){
-    while(1){
-    display_static();
-    image.saveToFile("test.png");
-    make_heap();
-    //update x,y
-    }
-}
-
-
-
 
 int Mandelbrot::colour(double a,double b){ //return iterations, used to determine colour
     double x0 = a;

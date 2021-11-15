@@ -1,8 +1,7 @@
-// #include<simplecpp>
+#include<simplecpp>
 #define WINDOW_X 250
 #define WINDOW_Y 250
 // #include "graphics.h"
-
 
 int initwindow(int width, int height, const char* title="Windows BGI", int left=0, int top=0, bool dbflag=false, closeflag=true);
 
