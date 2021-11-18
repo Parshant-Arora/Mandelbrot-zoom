@@ -1,11 +1,14 @@
 #include<bits/stdc++.h>
+// #ifndef HEAP_H
+// #define HEAP_H
+
 #include"packet.h"
 using namespace std;
 #define MAX_SIZE (1<<21)
 
 
 
-// class Packet;
+class Packet;
 
 class Heap {
     class Packet *arr;
@@ -15,7 +18,7 @@ class Heap {
     Heap();
     // Heap(int);
     void insert(class Packet elem);
-    int delete_min_and_return();
+    Packet delete_min_and_return();
     void delete_min();
     void heapify(int node);
     void print(int,int);
@@ -90,6 +93,15 @@ void Heap::delete_min(){
     heapify(0);
 }
 
+Packet Heap::delete_min_and_return(){
+    Packet temp = arr[0]; //swap it with last elem
+    arr[0] = arr[l-1];
+    arr[l-1] = temp;
+    swaps++;
+    l--; //decrease length
+    heapify(0);
+    return temp;
+}
 
 void Heap::heapify(int node){
     int p = node;
@@ -119,3 +131,5 @@ void Heap::heapify(int node){
         else return;
     }
 }
+
+// #endif

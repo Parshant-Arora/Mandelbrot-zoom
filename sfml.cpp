@@ -8,7 +8,8 @@ using namespace sf;
 int main()
 {
     Mandelbrot m(500,500,1);
-    m.draw();
+    // m.draw();
+    m.automate();
     return 0;
 }
 
