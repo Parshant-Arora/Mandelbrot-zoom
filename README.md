@@ -1,5 +1,7 @@
 # Mandelbrot-zoom
-![alt text](https://github.com/Parshant-Arora/Mandelbrot-zoom/blob/main/final/image.png?raw=true))
+![Image](https://user-images.githubusercontent.com/75263532/142677013-5c329849-14d6-46b7-a23f-2f2fca23f43a.png)
+
+
 My CS293 course project. Implementation of Mandelbrot Zoom using SFML graphics library, and efficient use of Data Structures
 
 Author - Parshant Arora (200050099) 
