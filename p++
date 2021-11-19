@@ -1,4 +1,0 @@
-#!/bin/sh -x
-g++ -c $@
-g++ $@ -o ./a.out -lsfml-graphics -lsfml-window -lsfml-system
-
