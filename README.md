@@ -3,18 +3,27 @@
 My CS293 course project. Implementation of Mandelbrot Zoom using SFML graphics library, and efficient use of Data Structures
 
 Author - Parshant Arora (200050099) 
+
 Project - Mandelbrot Zoom	 
+
 Implementation language - C++ 
+
 Graphics Package - SFML
+
 Github Repo - https://github.com/Parshant-Arora/Mandelbrot-zoom (private currently)
+
 Lines ~ 900-1000
+
 Demo - https://drive.google.com/drive/folders/1aMzds918GLNpYz6T-9Y-6Un82xxLwG_H?usp=sharing
 
 ===================Compile Command==============================
 
 g++ -c $@
+
 g++ $@ -o ./a.out -lsfml-graphics -lsfml-window -lsfml-system
+
 ./a.out
+
 (@ = file name)
 
 
@@ -32,9 +41,13 @@ g++ $@ -o ./a.out -lsfml-graphics -lsfml-window -lsfml-system
 =======================LOG======================================
 
 Version 1.1 - Implemented Basic Mandelbrot Drawing in simplecpp
+
 Version 1.2 - Improvised the code with proper classes and functions
+
 Version 1.3 - Switched to SFML library and implemented Zoom 
+
 Version 1.4 - Added Automatic Zoom
+
 Version 1.5 - Added Buttons and final touch 
 
 ====================!======================!====================
