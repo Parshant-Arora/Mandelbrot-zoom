@@ -1,5 +1,5 @@
 # Mandelbrot-zoom
-
+![alt text](https://drive.google.com/file/d/1U8UMbky6huKF91924b5fs6RhVWQHSV87/view?usp=sharing)
 My CS293 course project. Implementation of Mandelbrot Zoom using SFML graphics library, and efficient use of Data Structures
 
 Author - Parshant Arora (200050099) 
